@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+/* TOP NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B1416;
+    padding: 10px 20px;
+}
+
+/* Left section of navbar*/
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Right section of navbar */
+.right-section {
+    display: flex;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+/* Top nav items styling */
+
+/* LEFT SECTION - LOGO AND TEXT */
+.top-nav-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    padding: 10px 10px;
+}
+
+.reddit-text {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    margin-right: 10px; 
+}
+
+/* RIGHT SECTION - BUTTONS */
+.div-buttons {
+    padding: 10px 10px;
+}
+
+.top-nav-button {
+    border-radius: 10px;
+    border: none;
+}
+
+.top-nav-button-text {
+    margin: 10px;
+    gap: 10px;
+}
+
+.div-buttons :hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* MIDDLE SECTION - SEARCH BAR */
+.search-bar {
+    flex: 0.5;
+    margin: 0 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    outline: none;
+}
