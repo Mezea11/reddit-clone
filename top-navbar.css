@@ -1,6 +1,9 @@
+/* ///////////////////////////////////////////////////////////// */
+/* BODY STYLING */
 * {
     margin: 0;
     padding: 0;
+    background-color:#0B1416;
 }
 
 /* ///////////////////////////////////////////////////////////// */
@@ -33,6 +36,7 @@ nav {
     height: auto;
     margin-right: 10px;
     padding: 10px 10px;
+    cursor: pointer;
 }
 
 .reddit-text {
@@ -40,6 +44,7 @@ nav {
     font-weight: bold;
     font-size: 32px;
     margin-right: 10px; 
+    cursor: pointer;
 }
 
 /* RIGHT SECTION - BUTTONS */
@@ -50,15 +55,17 @@ nav {
 .top-nav-button {
     border-radius: 10px;
     border: none;
+    background-color: white;
 }
 
 .top-nav-button-text {
     margin: 10px;
     gap: 10px;
+    background-color: white;
 }
 
 .div-buttons :hover {
-    color: white;
+    color: gray;
     cursor: pointer;
 }
 
@@ -71,7 +78,78 @@ nav {
 .search-bar input {
     width: 100%;
     padding: 15px;
+    background-color: white;
     border-radius: 20px;
     border: 1px solid black;
     outline: none;
+}
+
+/* Border between TOPNAV and POST SECTION */
+.border-topnav-postcontainer {
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+/* Post section */
+
+.popular-button {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    background-color: white;
+    width: 16rem;
+    height: 2rem;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popular-button-icon {
+    width: 2rem;
+    height: auto;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.popular-button :hover {
+    color: gray;
+    background-color: gray;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 1rem;    
+    margin: 1rem;
+    margin-right: 16rem;
+    padding: 0 10rem;
+}
+
+.post-divs {
+    justify-content: end;
+    text-align:center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    background-color: white;
+}
+
+.post-divs-text {
+    background-color: white;
+}
+
+.post-divs-img {
+    flex: 1;
+    height: 8rem;
+    width: auto;
+    background-color: white;
+}
+
+.post-divs :hover {
+    cursor: pointer;
 }
