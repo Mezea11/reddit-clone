@@ -49,15 +49,20 @@ nav {
 .search-bar {
     flex: 0.5;
     margin: 0 10px;
+    transition: opacity 0.3s;
 }
 
 .search-bar input {
     width: 100%;
     padding: 15px;
-    background-color: white;
+    background-color:#1e2b2e;
     border-radius: 20px;
     border: 1px solid black;
     outline: none;
+}
+
+.search-bar :hover {
+    opacity: 0.8;
 }
 
 /* RIGHT SECTION - BUTTONS */
