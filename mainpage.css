@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     background-color:#0B1416;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* ///////////////////////////////////////////////////////////// */
@@ -41,7 +42,6 @@ nav {
 
 .reddit-text {
     color: white;
-    font-weight: bold;
     font-size: 32px;
     margin-right: 10px; 
     cursor: pointer;
@@ -95,31 +95,73 @@ nav {
 /* ///////////////////////////////////////////////////////////// */
 /* Post section */
 
-.popular-button {
+/* Button */
+.popular-topics-container {
     display: flex;
-    flex-direction: row;
-    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-button {
     background-color: white;
     width: 16rem;
     height: 2rem;
+    display: flex;
     align-items: center;
     border: 1px solid white;
     border-radius: 10px;
     cursor: pointer;
 }
-
 .popular-button-icon {
     width: 2rem;
     height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
     background-color: white;
-    padding: 0 10px;
 }
 
-.popular-button :hover {
-    color: gray;
-    background-color: gray;
+.popular-button button {
+    background: none;
+    border: none;
 }
 
+.popular-button button:focus {
+    outline: none;
+}
+
+/* Topics list */
+.topics {
+    display: flex;
+    flex-direction: column-reverse;
+    cursor: pointer;
+}
+
+.topics-item {
+    color: white;
+    text-align: left;
+}
+
+.topics-option {
+    padding-left: 10px;
+    display: flex;
+    font-size: 16px;
+    width: 10rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: left;
+    margin-top: 1rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.topics-item :hover {
+    border: 1px solid #444444;
+    border-radius: 10px;
+    background-color: #444444;
+}
+
+
+/* Posts section */
 .post-container {
     display: flex;
     flex-direction: row;
@@ -128,6 +170,8 @@ nav {
     margin: 1rem;
     margin-right: 16rem;
     padding: 0 10rem;
+    height: 20rem;
+    width: auto;
 }
 
 .post-divs {
@@ -135,7 +179,7 @@ nav {
     text-align:center;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 1rem 1rem;
+    padding: 1rem;
     background-color: white;
 }
 

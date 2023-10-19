@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reddit-Klon draft</title>
-    <link rel="stylesheet" href="top-navbar.css">
+    <link rel="stylesheet" href="mainpage.css">
 </head>
 <body>
 
@@ -41,11 +41,26 @@
 
     <!-- Posts -->
     <main class="post-container">
-        <!-- Popular Button -->
-        <div class="popular-button">
-            <img src="popularicon.png" alt="" class="popular-button-icon">
-            <button class="popular-button">Popular</button>
+        <!-- Popular Button and Topics List Container -->
+        <div class="popular-topics-container">
+            <!-- Popular button -->
+            <div class="popular-button">
+                <img src="popularicon.png" alt="" class="popular-button-icon">
+                <button class="popular-button">Popular</button>
+            </div>
+            <!-- Topics List -->
+              <div class="topics">
+                <div class="topics-item">
+                    <div class="topics-option">Gaming</div>
+                    <div class="topics-option">Sports</div>
+                    <div class="topics-option">Business</div>
+                    <div class="topics-option">Crypto</div>
+                    <div class="topics-option">Televison</div>
+                    <div class="topics-option">Celebrity</div>
+                </div>
+            </div>
         </div>
+
 
         <!-- Posts -->
         <div class="post-divs">
@@ -54,9 +69,9 @@
             <p><h3 class="post-divs-text">Välkomna alla svenskar!</h3></p>
         </div>
         <div class="post-divs">
-            <img src="reddit-logo.png" alt="" class="post-divs-img">
-            <p ><h1 class="post-divs-text">Post Header2</h1></p>
-            <p><h3 class="post-divs-text">Post content2</h3></p>
+            <img src="valheim.jpg" alt="" class="post-divs-img">
+            <p ><h1 class="post-divs-text">Valheim Update</h1></p>
+            <p><h3 class="post-divs-text">Valheim has recieved a mega-update! Read the latest patch-notes in this article.</h3></p>
         </div>   
         <div class="post-divs">
             <img src="reddit-logo.png" alt="" class="post-divs-img">
@@ -68,4 +83,6 @@
             <p><h1 class="post-divs-text">Post Header4</h1></p>
             <p><h3 class="post-divs-text">Post content4</h3></p>
         </div>
-    </main>
+ 
+    </main>   
+</body>
