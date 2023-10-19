@@ -29,8 +29,6 @@ nav {
 }
 
 /* ///////////////////////////////////////////////////////////// */
-/* Top nav items styling */
-
 /* LEFT SECTION - LOGO AND TEXT */
 .top-nav-img {
     width: 50px;
@@ -44,28 +42,6 @@ nav {
     color: white;
     font-size: 32px;
     margin-right: 10px; 
-    cursor: pointer;
-}
-
-/* RIGHT SECTION - BUTTONS */
-.div-buttons {
-    padding: 10px 10px;
-}
-
-.top-nav-button {
-    border-radius: 10px;
-    border: none;
-    background-color: white;
-}
-
-.top-nav-button-text {
-    margin: 10px;
-    gap: 10px;
-    background-color: white;
-}
-
-.div-buttons :hover {
-    color: gray;
     cursor: pointer;
 }
 
@@ -84,6 +60,36 @@ nav {
     outline: none;
 }
 
+/* RIGHT SECTION - BUTTONS */
+.div-buttons {
+    padding: 10px 10px;
+}
+
+.top-nav-button {
+    border-radius: 32px;
+    border: none;
+    background-color: #111b1d;
+    transition: opacity 0.3s;
+}
+
+.top-nav-button-text {
+    font-size: 16px;
+    margin: 14px 14px;
+    gap: 10px;
+    background-color: #111b1d;
+    color: white;
+}
+
+.div-buttons :hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.top-nav-button-text :hover {
+    opacity: 0.8;
+}
+
 /* Border between TOPNAV and POST SECTION */
 .border-topnav-postcontainer {
     border: 1px solid rgb(53, 53, 53);
@@ -93,9 +99,9 @@ nav {
 }
 
 /* ///////////////////////////////////////////////////////////// */
-/* Post section */
+/* LEFT SIDEBAR */
 
-/* Button */
+/* Popular Button */
 .popular-topics-container {
     display: flex;
     flex-direction: column;
@@ -129,7 +135,8 @@ nav {
     outline: none;
 }
 
-/* Topics list */
+/* ////////////////// */
+/* TOPICS LIST INSIDE LEFT SIDEBAR*/
 .topics {
     display: flex;
     flex-direction: column-reverse;
@@ -151,17 +158,48 @@ nav {
     justify-content: left;
     margin-top: 1rem;
     border: 1px solid transparent;
+    border-radius: 16px;
+    background-color: #111b1d;
+    transition: background-color 0.3s, border 0.3s, border-radius 0.3s, transform 0.1s 0.1s;
+}
+
+.topics-icon {
+    background-color: transparent;
+    border: 1px solid transparent;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 24px;
+    outline: none;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .topics-item :hover {
     border: 1px solid #444444;
     border-radius: 10px;
     background-color: #444444;
+    transform: scale(1.05);
+    transform: translateX(5px);
 }
 
+.topics-icon :hover {
+    border: 1px solid #444444;
+    border-radius: 10px;
+    background-color: #444444;
+}
 
-/* Posts section */
+/* BORDER INSIDE THE SIDEBAR - BORDER TOPICS*/
+.border-topics {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+/* POSTS SECTION */
 .post-container {
     display: flex;
     flex-direction: row;
@@ -189,7 +227,7 @@ nav {
 
 .post-divs-img {
     flex: 1;
-    height: 8rem;
+    height: 6rem;
     width: auto;
     background-color: white;
 }
